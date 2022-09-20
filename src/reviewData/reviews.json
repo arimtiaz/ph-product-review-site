@@ -1,0 +1,45 @@
+[
+    {
+        "id":"eb746f88-b261-4205-9b7c-a3e9515d9277",
+        "name":"Sam Williams",
+        "rating":"7",
+        "review":"",
+        "img":"../images/img1.jpg"
+    },
+    {
+        "id":"7b53df24-7c7a-45a9-853c-c355576d1759",
+        "name":"Rafael Clear",
+        "rating":"8",
+        "review":"",
+        "img":"../images/img2.jpg"
+    },
+    {
+        "id":"95762572-6f11-4da3-8720-12c1384b2feb",
+        "name":"Mack Kr ",
+        "rating":"3",
+        "review":"",
+        "img":"../images/img3.jpg"
+    },
+    {
+        "id":"f87b82f6-899d-40bb-bfa4-4814a1a979c9",
+        "name":"Richard Sane",
+        "rating":"2",
+        "review":"",
+        "img":"../images/img4.jpg"
+    },
+    {
+        "id":"1c10479e-ce8e-4f1f-9c6c-0ad0e6589ac2",
+        "name":"Zai Ching",
+        "rating":"1",
+        "review":"",
+        "img":"../images/img5.jpg"
+    },
+    {
+        "id":"7a55e045-5f86-4121-b6f7-cbdd1b7580b1",
+        "name":"Broz Zon",
+        "rating":"1",
+        "review":"",
+        "img":"../images/img6.jpg"
+    }
+    
+]

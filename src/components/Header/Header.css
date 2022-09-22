@@ -1,7 +1,13 @@
+
+
 .navigation-bar{
     background-color: rgb(39, 39, 39);
 }
 
 .nav-texts{
-    color: orange;
+    color: rgb(232, 156, 13);
+}
+.nav-texts:hover{
+    color: rgb(255, 209, 123);
+    transition: ease-in-out;
 }

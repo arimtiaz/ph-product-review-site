@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 import Dashboard from './components/Dashboard/Dashboard'
 import { Route, Routes } from 'react-router-dom';
 import Blogs from './components/Blogs/Blogs';
+import ReviewPage from './components/ReviewPage/ReviewPage';
 import Review from './components/Reviews/Review';
 import Home from './components/Home/Home';
 
@@ -21,8 +22,8 @@ function App() {
         </Helmet>
         <Header></Header>
         <Routes>  
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/reviews' element={<Review />}></Route>
+          <Route path='/*' element={<Home />}></Route>
+          <Route path='/reviews' element={<ReviewPage />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/blogs' element={<Blogs />}></Route>
         </Routes>

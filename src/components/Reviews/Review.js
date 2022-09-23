@@ -10,17 +10,16 @@ const Review = (props) => {
     const {id, img, rating, name, say} = props.review;
 
     return (
-        <div>
+        <div >
             <Container>
-            <Card style={{ width: '420px', height: '250px'}}>
+            <Card style={{ width: '420px', height: '250px', border:''}}>
                  <Card.Body>
-                        <Card.Img variant="top" src={img} />
+                        <Card.Img className='customer-img' variant="top" src={img} />
                             <Card.Title>{name}</Card.Title>
                                 <p><small>Rating: {rating} tars</small></p>
                             <Card.Text>
                                 {say}
                             </Card.Text>
-                     <Button variant='warning'>Load</Button>
                 </Card.Body>
             </Card>
             </Container>

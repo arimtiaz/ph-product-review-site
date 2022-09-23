@@ -4,7 +4,7 @@
         "name":"Sam Williams",
         "rating":"7",
         "say":"They did nothing as the raccoon attacked the lady’s bag of food.",
-        "img":"../images/img1.jpg"
+        "img":"/public/images/img1.jpg"
     },
     {
         "id":"7b53df24-7c7a-45a9-853c-c355576d1759",

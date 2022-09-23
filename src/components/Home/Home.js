@@ -27,18 +27,18 @@ const Home = () => {
                     </Button>
            </div>
                 <div className="home-img">
-                <img className='img-size' src="/src/images/bike.png" alt="" />
+                    <img src='/public/images/bike.png' alt="" />
                 </div>
                 </div>
             {/* Review Section */}
             <div className="review-heading">
-                        <h1>What Our Community Say</h1>
-                    </div>
+                <h1>What Our Community Say</h1>
+            </div>
                 <div className="review-section">
                     <div className="review-container">                          
                         <div className="review-products">
-                        {
-                            reviews.map(review => <Review key={review.id} review={review}></Review>)
+                    {
+                            reviews.slice(0,3).map(review => <Review key={review.id} review={review}></Review>)
                     }
                         </div>
                     </div>

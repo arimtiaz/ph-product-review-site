@@ -10,3 +10,20 @@
     width: auto;
     height: 800px;
 }
+
+.img-size{
+    width: 500px;
+    height: 500px;
+}
+
+.review-section{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.review-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 80px 50px;
+}

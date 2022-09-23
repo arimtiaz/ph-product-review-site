@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Container, Col, Row } from 'react-bootstrap';
 import './Home.css'
+import Review from '../Reviews/Review';
 
 const Home = () => {
     const [reviews, setReviews] = useState([]);
@@ -13,9 +14,6 @@ const Home = () => {
         .then(data => setReviews(data))
     },[])
 
-    const reviewPush = (reviews) =>{
-        console.log(reviews)
-    }
 
     return (
         <div className='home'>
@@ -29,14 +27,20 @@ const Home = () => {
                     </Button>
            </div>
                 <div className="home-img">
-                <img src="/src/images/bike.png" alt="" />
+                <img className='img-size' src="/src/images/bike.png" alt="" />
                 </div>
                 </div>
             {/* Review Section */}
-                <div className="review-section">
-                    <div className="review-heading">
+            <div className="review-heading">
                         <h1>What Our Community Say</h1>
-                        <button onClick={() => reviewPush(reviews)}>Dekho</button>
+                    </div>
+                <div className="review-section">
+                    <div className="review-container">                          
+                        <div className="review-products">
+                        {
+                            reviews.map(review => <Review key={review.id} review={review}></Review>)
+                    }
+                        </div>
                     </div>
             </div>
         </div>

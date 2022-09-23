@@ -1,9 +1,29 @@
 import React from 'react';
+import "./Review.css"
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-const Review = () => {
+import { Button, Card, Container } from 'react-bootstrap';
+
+
+const Review = (props) => {
+    const {id, img, rating, name, say} = props.review;
+
     return (
         <div>
-            <h1>Review</h1>
+            <Container>
+            <Card style={{ width: '420px', height: '250px'}}>
+                 <Card.Body>
+                        <Card.Img variant="top" src={img} />
+                            <Card.Title>{name}</Card.Title>
+                                <p><small>Rating: {rating} tars</small></p>
+                            <Card.Text>
+                                {say}
+                            </Card.Text>
+                     <Button variant='warning'>Load</Button>
+                </Card.Body>
+            </Card>
+            </Container>
         </div>
     );
 };

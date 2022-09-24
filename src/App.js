@@ -27,7 +27,6 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/blogs' element={<Blogs />}></Route>
         </Routes>
-  
     </div>
   );
 }
